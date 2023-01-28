@@ -1,7 +1,6 @@
 <script setup>
 import { computed, ref } from "vue";
 
-const name = "Cosita";
 const counter = ref(0);
 const favoriteList = ref([]);
 
@@ -16,7 +15,6 @@ const onReset = () => {
   counter.value = 0;
   favoriteList.value = [];
 };
-
 const onAddList = () => {
   favoriteList.value = [...favoriteList.value, counter.value];
 };
@@ -31,7 +29,6 @@ const classCounter = computed(() => {
     return "c-green";
   }
 });
-
 const existNumberInList = computed(() => {
   const existNumber = favoriteList.value.some(
     (number) => number === counter.value
