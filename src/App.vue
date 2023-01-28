@@ -90,7 +90,18 @@ const existNumberInList = computed(() => {
 </template>
 
 <style scoped>
+.c-peru {
+  color: peru;
+}
+.c-red {
+  color: red;
+}
+
+.c-green {
+  color: green;
+}
 .logo-wrapper {
+  margin-bottom: 4rem;
   text-align: center;
 }
 .main-counter-number {
@@ -110,14 +121,9 @@ const existNumberInList = computed(() => {
   margin-top: 1rem;
 }
 
-.c-peru {
-  color: peru;
-}
-.c-red {
-  color: red;
-}
-
-.c-green {
-  color: green;
+@media (min-width: 1024px) {
+  .logo-wrapper {
+    margin-bottom: 0;
+  }
 }
 </style>
